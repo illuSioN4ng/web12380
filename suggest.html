@@ -9,80 +9,69 @@
     <link rel="stylesheet" href="./css/index.css"/>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="./js/html5shiv.min.js"></script>
-    <script src="./js/respond.min.js"></script>
-    <![endif]-->
-
     <script type="text/javascript" charset="utf-8" src="./utf8-jsp/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="./utf8-jsp/ueditor.all.min.js"> </script>
     <script type="text/javascript" charset="utf-8" src="./utf8-jsp/lang/zh-cn/zh-cn.js"></script>
 </head>
 <body>
-<div class="contain_div">
-    <div class="container">
-        <div class="top_title">
+    <div class="contain_div">
+        <div class="container">
+            <div class="top_title">
 
-        </div>
-        <div class="main clearfix">
-            <div class="main_left pull-left">
-                <ul class="main_nav">
-                    <li><a href="./index.html">首&nbsp;&nbsp;页</a></li>
-                    <li><a href="./rules.html">法律法规</a></li>
-                    <li><a href="./notice.html">举报须知</a></li>
-                    <li><a href="./callback.html">反馈查询</a></li>
-                    <li><a href="./suggest.html" class="active">意见建议</a></li>
-                    <li><a href="#">友情链接</a></li>
-                </ul>
             </div>
-            <div class="main_right pull-left">
-                <div class="main_right_title">意见建议</div>
-                <div class="main_suggest">
-                    <form class="form-horizontal">
-                        <div class="form-group">
-                            <label for="title" class="col-sm-2 control-label">标题：</label>
-                            <div class="col-sm-5">
-                                <input type="text" class="form-control" id="title" placeholder="请输入标题">
-                            </div>
-                            <label for="type" class="col-sm-2 control-label">类别：</label>
-                            <div class="col-sm-3">
-                                <select class="form-control" id="type">
-                                    <option>意见建议</option>
-                                    <option>举报相关</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="ueditor" class="col-sm-2 control-label">内容：</label>
-                            <div class="col-sm-10 font_size_25">
-                                *
-                            </div>
-                            <div class="col-sm-12">
-                                <script id="editor" type="text/plain" class="ueditor"></script>
-                            </div>
-                        </div>
-                        <div class="form-group suggest_btn">
-                            <button type="submit" class="btn btn-default position_submit">提交</button>
-                            <input type="button" class="btn btn-default position_clear" value="清除">
-                        </div>
-                    </form>
+            <div class="main clearfix">
+                <div class="main_left pull-left">
+                    <ul class="main_nav">
+                        <li><a href="./index.html">首&nbsp;&nbsp;页</a></li>
+                        <li><a href="./rules.html">法律法规</a></li>
+                        <li><a href="./notice.html">举报须知</a></li>
+                        <li><a href="./callback.html">反馈查询</a></li>
+                        <li><a href="./suggest.html" class="active">意见建议</a></li>
+                        <li><a href="#">友情链接</a></li>
+                    </ul>
                 </div>
+                <div class="main_right pull-left">
+                    <div class="main_right_title">意见建议</div>
+                    <div class="main_suggest">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="title" class="col-sm-2 control-label">标题：</label>
+                                <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="title" placeholder="请输入标题">
+                                </div>
+                                <label for="type" class="col-sm-2 control-label">类别：</label>
+                                <div class="col-sm-3">
+                                    <select class="form-control" id="type">
+                                        <option>意见建议</option>
+                                        <option>举报相关</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="editor" class="col-sm-2 control-label">内容：</label>
+                                <div class="col-sm-10 font_size_25">
+                                    *
+                                </div>
+                                <div class="col-sm-12">
+                                    <script id="editor" type="text/plain" class="ueditor"></script>
+                                </div>
+                            </div>
+                            <div class="form-group suggest_btn">
+                                <button type="submit" class="btn btn-default position_submit">提交</button>
+                                <input type="button" class="btn btn-default position_clear" value="清除">
+                            </div>
+                        </form>
+                    </div>
+            </div>
         </div>
         <div class="footer">
-            <div class="text-center">
-                COPYRIGHT 2015  中共广元市剑阁县委组织部  ALLRIGHT RESERVED
-            </div>
+             <div class="text-center">
+                 COPYRIGHT 2015  中共广元市剑阁县委组织部  ALLRIGHT RESERVED
+             </div>
+        </div>
         </div>
     </div>
-</div>
 
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="./js/jquery.min.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="js/bootstrap.min.js"></script>
 <script>
     var ue = UE.getEditor('editor');
 </script>

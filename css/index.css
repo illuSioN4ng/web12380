@@ -333,6 +333,46 @@
     height: 230px;
 }
 
+/*main_content.html*/
+.main_rules_title{
+    font-size: 23px;
+    font-family: "ºÚÌå";
+    font-weight: 700;
+}
+
+.main_rules_info{
+    font-size: 13px;
+    font-family: "ºÚÌå";
+    color: #edb00a;
+}
+
+.main_content{
+    font-size: 16px;
+    font-family: "Î¢ÈíÑÅºÚ";
+    line-height: 20px;
+    text-indent: 2em;
+    padding: 10px;
+}
+
+.divider{
+    color: white;
+    border-top: 5px solid white;
+}
+
+.link a{
+    margin: 0 20px;
+}
+
+.rules_content_btn{
+    margin: 10px auto;
+    width: 250px;
+}
+
+.rules_content_btn input{
+    margin: 0 20px;
+}
+
+
 
 
 
