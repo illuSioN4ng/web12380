@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>12380举报平台信息管理系统</title>
+
+
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/admin.css"/>
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/admin.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="../utf8-jsp/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="../utf8-jsp/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="../utf8-jsp/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class="title">
+            <h1>12380举报平台信息管理系统</h1>
+            <div class="title_letter">administration</div>
+        </div>
+        <div class="welcome">admin，你好，欢迎使用12380举报平台信息管理系统！</div>
+    </div>
+    <div class="main">
+
+        <!-- 左侧功能菜单-->
+        <div class="left">
+            <ul>
+                <li class="menu">功能菜单</li>
+                <li class="border_bottom"><a href="./admin.html" class="active">法律法规</a></li>
+                <li class="border_bottom"><a href="./report.html">举报须知</a></li>
+                <li class="border_bottom"><a href="./report_content.html">举报内容</a></li>
+                <li><a href="./callback.html">意见反馈</a></li>
+            </ul>
+        </div>
+
+        <!-- 右侧内容-->
+        <div class="right">
+            <div class="right_title">法律法规</div>
+
+            <!-- 右侧导航按钮-->
+            <div class="nav">
+                <a class="btn" href="./admin.html">信息查看</a>
+                <a class="btn btn_default" href="./rules_information_add.html">信息添加</a>
+            </div>
+            <div class="clr"></div>
+
+            <!-- 右侧搜索-->
+            <div class="search">
+                
+            </div>
+
+            <!-- 右侧内容部分-->
+            <div class="rules_information">
+                <table>
+                    <form action="">
+                        <tr>
+                            <td class="information_title"><span class="red_star">*</span>文章标题:</td>
+                            <td class="information_content"><input type="text"/></td>
+                            <td class="information_title">发布单位：</td>
+                            <td class="information_content"><input type="text"/></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td class="information_title">发布文号：</td>
+                            <td class="information_content"><input type="text"/></td>
+                            <td class="information_title">发布日期：</td>
+                            <td class="information_content"><input type="text"/></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td class="information_title">生效日期：</td>
+                            <td class="information_content"><input type="text"/></td>
+                            <td class="information_title">失效日期：</td>
+                            <td class="information_content"><input type="text"/></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td class="information_title">所属类别：</td>
+                            <td class="information_content"><input type="text"/></td>
+                            <td class="information_title">文件来源：</td>
+                            <td class="information_content"><input type="text"/></td>
+                        </tr>
+                        <tr>
+
+                        </tr>
+                        <tr>
+                            <td class="information_title"><span class="red_star">*</span>文章内容:</td>
+                            <td class="information_editor" colspan="3">
+                                <script id="editor" type="text/plain" class="ueditor"></script>
+                            </td>
+                        </tr>
+                        <tr class="btn_group">
+                            <td></td>
+                            <td><input type="button" value="提交"/></td>
+                            <td></td>
+                            <td><input type="button" value="清除"/></td>
+                        </tr>
+                    </form>
+                </table>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+    <div class="footer">
+        Copyright 2013成电先锋
+    </div>
+</div>
+
+<script>
+    var ue = UE.getEditor('editor');
+</script>
+</body>
+</html>

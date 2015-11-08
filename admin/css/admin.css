@@ -42,7 +42,7 @@ body{
 
 .main{
     background: #0f5faf;
-    margin: 5px 2px;
+    margin: 0px 2px;
 }
 
 .clr{
@@ -53,7 +53,7 @@ body{
     border-radius: 10px;
     width: 210px;
     float: left;
-    background-color: #ffffff;
+    background-color: #eff5fa;
     margin: 2px;
 }
 
@@ -80,7 +80,6 @@ body{
 .border_bottom{
     border-bottom: dashed 2px #a7a9aa;
 }
-
 .left li a {
     width: 180px;
     height: 25px;
@@ -98,7 +97,203 @@ body{
 .right{
     float: left;
     border: solid 1px #ccc;
-    background-color: #ffffff;
+    background-color: #eff5fa;
+    width: 768px;
+    min-height: 670px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px #999;
+}
+
+.right_title{
+    font-size: 19px;
+    color: #0f5faf;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.btn{
+    display: block;
+    float: left;
+    line-height: 30px;
+    width: 105px;
+    height: 30px;
+    font-size: 17px;
+    font-family: "微软雅黑";
+    color: white;
+    text-align: left;
+    border-radius: 5px;
+    border: none;
+    background: url("../images/btn_logo.png") no-repeat 85px 12px #0f5faf;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+.btn_default{
+    background: url("../images/btn_logo_default.png") no-repeat 85px 10px #0f5faf;
+}
+
+.search{
+    height: 38px;
+    background-color: #0f5faf;
+    color: #fff;
+    line-height: 38px;
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.form-control{
+    width: 100px;
+    height: 20px;
+}
+
+.margin_left30{
+    margin-left: 30px;
+}
+
+.float_right{
+    float: right;margin: 0px 10px;
+}
+.btn_feature{
+    width: 40px;
+    height: 22px;
+    background-color: #c5cace;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+table{
+    text-align: center;
+    line-height: 30px;
+}
+
+th{
+    text-align: center;
+}
+
+.content_rules{
+    height: 60px;
+}
+
+.content_title{
+    background: -webkit-linear-gradient(#eef2f6, #babec2); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#eef2f6, #babec2); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#eef2f6, #babec2); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#eef2f6, #babec2); /* 标准的语法 */
     width: 780px;
-    min-height: 500px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.rules_id{
+    width: 50px;
+    border-right: solid 1px #8f9195;
+}
+
+.rules_title{
+    width: 310px;
+    border-right: solid 1px #8f9195;
+}
+
+.rules_date{
+    width: 150px;
+    border-right: solid 1px #8f9195;
+}
+
+.rules_type{
+    width: 130px;
+    border-right: solid 1px #8f9195;
+}
+
+.rules_operation{
+    width: 140px;
+}
+
+.striped{
+    background: #e5e5e5;
+}
+
+.operation{
+    color: #0055ff;
+    padding: 5px;
+}
+
+.border_left{
+    border-left: solid 1px #999;
+}
+
+.pagenation{
+    margin: 10px auto;
+    width: 260px;
+    font-size: 13px;
+}
+
+.pagenation a{
+    color: black;
+    margin: 0px 7px;
+}
+
+.pagenation a:hover{
+    color: #0f5faf;
+    text-decoration: underline;
+}
+
+.a_btn{
+    background-color: #e5e5e5;
+    padding: 2px;
+    border: solid 1px #999;
+}
+
+.footer{
+    margin: 0px 2px;
+    text-align: center;
+    height: 30px;
+    background-color: #0f5faf;
+    padding: 10px;
+    color: #fff;
+}
+/*信息查看开始*/
+.rules_information{
+    font-size: 14px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.rules_content h1{
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+/*信息编辑、添加*/
+.information_title{
+    width: 100px;
+}
+
+.information_content{
+    width: 270px;
+    text-align: left;
+}
+
+.information_editor{
+    width: 650px;
+    text-align: left;
+}
+
+.red_star{
+    color: red;
+}
+
+.btn_group{
+    text-align: center;
+}
+
+.btn_group input{
+    width: 60px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
 }
