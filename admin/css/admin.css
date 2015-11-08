@@ -99,7 +99,7 @@ body{
     border: solid 1px #ccc;
     background-color: #eff5fa;
     width: 768px;
-    min-height: 670px;
+    min-height: 550px;
     padding: 5px;
     border-radius: 5px;
     border: solid 1px #999;
@@ -126,7 +126,7 @@ body{
     border: none;
     background: url("../images/btn_logo.png") no-repeat 85px 12px #0f5faf;
     padding-left: 10px;
-    margin: 5px;
+    margin: 1px 5px;
 }
 
 .btn_default{
@@ -296,4 +296,23 @@ th{
     height: 30px;
     margin: 10px;
     border-radius: 5px;
+}
+
+/*举报内容*/
+.report_information table{
+    border: solid 1px #999;
+    margin:10px;
+}
+
+.report_information td{
+    border: solid 1px #999;
+    width: 375px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 16px;
+    text-indent: 2em;
+}
+
+.line_height{
+    line-height: 40px;
 }
