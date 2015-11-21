@@ -13,19 +13,29 @@ function createCode(div_code){
 	checkCode.value = code;//把code值赋给验证码
 }
 //校验验证码
-function validate(id_code){
-	var inputCode = document.getElementById(id_code).value.toUpperCase(); //取得输入的验证码并转化为大写
-	if(inputCode.length <= 0) { //若输入的验证码长度为0
-		//createCode();
-		alert("请输入验证码！"); //则弹出请输入验证码
-		return false;
-	}else if(inputCode.toLowerCase() != code.toLowerCase() ) { //若输入的验证码与产生的验证码不一致时
-		alert("验证码输入错误！@_@"); //则弹出验证码输入错误
-		createCode();//刷新验证码
-		document.getElementById("identification_code").value = "";//清空文本框
-		return false;
-	}else { //输入正确时
-		alert("正确^-^"); //弹出^-^
-		return true;
-	}           
+function validate(ids){
+	for(var i =0; i < ids.length; i++){
+		if(ids[i].id == 'identification_code'){
+			var inputCode = ids[i].value.toUpperCase(); //取得输入的验证码并转化为大写
+			if(inputCode.length <= 0) { //若输入的验证码长度为0
+				createCode('code');
+				alert("请输入验证码！"); //则弹出请输入验证码
+				return false;
+			}else if(inputCode.toLowerCase() != code.toLowerCase() ) { //若输入的验证码与产生的验证码不一致时
+				alert("验证码输入错误！@_@"); //则弹出验证码输入错误
+				createCode('code');//刷新验证码
+				document.getElementById("identification_code").value = "";//清空文本框
+				document.getElementById("identification_code").focus();
+				return false;
+			}else { //输入正确时
+				alert("验证码正确^-^"); //弹出^-^
+			}
+		}else{
+			if(ids[i].value.length <= 0){
+				alert('请输入查询码！');
+				return false;
+			}
+		}
+	}
+	return true;
 }

@@ -63,17 +63,17 @@
                         </div>
                         <div class="form-group">
                             <div class="col-sm-3 col-sm-offset-2">
-                                <button type="submit" class="btn btn-default" onclick = "validate('identification_code');">提交</button>
+                                <button type="submit" class="btn btn-default" onclick = "return validate(inputCheck);">提交</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer">
-        <div class="text-center">
-            COPYRIGHT 2015  中共广元市剑阁县委组织部  ALLRIGHT RESERVED
+        <div class="footer">
+            <div class="text-center">
+                COPYRIGHT 2015  中共广元市剑阁县委组织部  ALLRIGHT RESERVED
+            </div>
         </div>
     </div>
 </div>
@@ -82,6 +82,7 @@
     window.onload = function(){
         createCode('code');
     }
+    var inputCheck = document.getElementsByClassName("form-control");
 </script>
 </body>
 </html>
